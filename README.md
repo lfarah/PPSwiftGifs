@@ -6,17 +6,13 @@ PPSwiftGifs provides a convenient way to show animated GIF images as a part of i
 
 ## Installation
 
-### Carthage
-* `> Cartfile`
-* `nano Cartfile`
-* put `github "peterprokop/PPSwiftGifs"` into Cartfile
-* Save it: `ctrl-x`, `y`, `enter`
-* Run `carthage update`
-* Copy `PPSwiftGifs.framework` from `Carthage/Build/iOS` to your project
-* Make sure that `PPSwiftGifs` is added in `Embedded Binaries` section of your target (or else you will get `dyld library not loaded referenced from ... reason image not found` error)
-* Add `import PPSwiftGifs` on top of your view controller's code
+#### Carthage
+Create a `Cartfile` that lists the framework and run `carthage bootstrap`. Follow the [instructions](https://github.com/Carthage/Carthage#if-youre-building-for-ios) to add `$(SRCROOT)/Carthage/Build/iOS/PPSwiftGifs.framework` to an iOS project.
 
-### Manual
+```
+github "peterprokop/PPSwiftGifs"
+```
+#### Manually
 
 * Just clone this repo and add ```PPSwiftGifs.swift``` to your project.
 * Add ImageIO.framework to your project.
